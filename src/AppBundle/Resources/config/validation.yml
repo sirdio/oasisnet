@@ -1,0 +1,13 @@
+AppBundle\Entity\Curso:
+    properties:
+        titulo:
+            - NotBlank: {message: "El Campo Titulo no puede estar vacio"}
+            - Length:
+                min: 2
+                minMessage: "El Campo Titulo debe tener más de 2 caracteres."
+        descripcion:
+            - NotBlank: {message: "El Campo Descripcion no puede estar vacio"}
+        precio:
+            - Type:
+                type: numeric
+                message: "El Campo Precio tiene que ser numerico."

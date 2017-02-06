@@ -1,0 +1,82 @@
+{% extends '::base1.html.twig' %}
+{% block title %}Sitio oficial de oasisnet{% endblock %}
+{% block contenido %}
+	<section id="principal">
+			<article id="galeria-inicio">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src={{asset('public/img/slide-0.png')}} />
+							<p class="flex-caption">bextlan.com | lugar de... bits, vectores y pixeles.</p>
+						</li>
+						<li>
+							<img src={{asset('public/img/slide-1.png')}} />
+							<p class="flex-caption">Curso HTML5</p>
+						</li>
+						<li>
+							<img src={{asset('public/img/slide-2.png')}} />
+							<p class="flex-caption">Curso HTML5</p>
+						</li>
+						<li>
+							<img src={{asset('public/img/slide-3.png')}} />
+							<p class="flex-caption">Curso PHP</p>
+						</li>
+						<li>
+							<img src={{asset('public/img/slide-4.png')}} />
+							<p class="flex-caption">Curso PHP</p>
+						</li>
+						<li>
+							<img src={{asset('public/img/slide-5.png')}} />
+							<p class="flex-caption">Curso PHP</p>
+						</li>												
+					</ul>
+				</div>
+			</article>
+	</section>
+	<aside>
+
+			{#<form action="#" method="post">
+				<fieldset>
+					<legend>Iniciar Sesión</legend>
+					<div>
+						<label for="username">Usuario:</label>
+						<input type="text" id="username" name="_username"/>
+					</div>
+					<div>
+						<label for="password">Contraseña:</label>
+						<input type="password" id="password" name="_password" />
+					</div>
+					<div>
+						<input type="submit" name="login" value="Acceder" />
+					</div>
+				</fieldset>
+			</form>#}
+			<br /><br />
+			<!-- Twitter -->
+			{#<script src="http://platform.twitter.com/widgets.js" /></script>
+			<a href="http://twitter.com/share" class="twitter-share-button" data-text="#bextlan.com | lugar de bits, vectores y pixeles. Videotutoriales: HTML5, CSS3, jQuery, PHP, AS3 y más... visítanos =)" data-url="http://bextlan.com" data-count="vertical">Twittear</a>
+			<br /><br />#}
+			<!-- Facebook -->
+			<div id="fb-root"></div>
+			<script src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>
+			<fb:like href="https://www.facebook.com/oasisnet2/?fref=ts" send="false" layout="box_count" show-faces="false" font="tahoma"></fb:like>
+			<br /><br />
+			<!-- Instagram -->
+			{#<style>.ig-b- { display: inline-block; }
+			.ig-b- img { visibility: hidden; }
+			.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+			.ig-b-48 { width: 48px; height: 48px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0; }
+			@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+			.ig-b-48 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png); background-size: 60px 178px; } }</style>
+			<a href="http://instagram.com/jonmircha?ref=badge" target="_blank" class="ig-b- ig-b-48"><img src="//badges.instagram.com/static/images/ig-badge-48.png" alt="Instagram" /></a>#}
+			<!-- Publicidad -->
+			{#<figure>
+				<a class="fade" href="http://geekonos.com" target="_blank">
+					<img src="img/logo-geekonos.png" alt="geekonos" />
+					<figcaption>geekonos</figcaption>
+				</a>
+			</figure>#}
+		</aside>
+{% endblock %}
+
+	

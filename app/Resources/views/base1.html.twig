@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>{% block title %}Sitio con Responsive Web Design en HTML5, CSS3 y jQuery{% endblock %}</title>
+	<meta name="description" content="Bienvenido a mi portafolio web hecho en HTML5, CSS3 y jQuery con Responsive Web Design"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="shortcut icon" type="image/x-icon" href={{asset('public/favicon.ico')}} />
+	<link rel="author" type="text/plain" href={{asset('public/humans.txt')}} />
+	<link rel="sitemap" type="application/xml" title="Sitemap" href={{asset('public/sitemap.xml')}} />
+	<link rel="stylesheet" href={{asset('public/css/flexslider.css')}} />
+	<link rel="stylesheet" href={{asset('public/css/estilos.css')}} />
+	<link rel="stylesheet" href={{asset('public/fonts/style.css')}} />
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="#">
+				<img class="fade" alt="bextlan.com | lugar de... bits, vectores y pixeles." src={{asset('public/img/oasisnet-logo3.png')}} />
+			</a>
+		</h1>
+		{#<a href=""><span class="icon-login"></span></a>#}
+		<button type="button" href={{path('visitante_acerca')}} id="button"><span class="icon-login"></span></button>
+		<nav>
+			<ul>
+				<li><a href={{path('visitante_homepage')}}><span class="icon-home"></span>Inicio</a></li>
+				<li><a href={{path('visitante_acerca')}}><span class="icon-creative-commons-noderivs"></span>Acerca...</a></li>
+				<li><a href={{path('visitante_servicios')}}><span class=""></span>Servicios</a></li>
+				{#<li><a href="#">Promociones</a></li>#}
+				<li><a href={{path('visitante_contacto')}}><span class=""></span>Contactanos...</a></li>
+				<li><a href={{path('visitante_socios')}}><span class=""></span>Socios WIPS</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="contenido">
+	{% block contenido %}
+
+    {% endblock %}
+	</section>
+	<footer>
+		OASISNET "Proveedor de Servicio de Internet Inalambrico" - Diseñado y desarrollado por <a rel="author" href="https://www.facebook.com/sergio.nav.1" target="_blank">@Porá-Sistemas </a> Todos los Drechos Reservados
+	</footer>
+	{% block javascripts %}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+	<script>
+		!window.jQuery && document.write("<script src={{asset('public/js/jquery.min.js')}}><\/script>");
+	</script>
+	<script src={{asset('public/js/jquery.flexslider.js')}}></script>
+	<script>
+		$(window).on("load",function(){
+			$(".flexslider").flexslider();
+		});
+	</script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	{% endblock %}
+</body>
+</html>

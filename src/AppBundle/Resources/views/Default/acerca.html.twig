@@ -1,0 +1,45 @@
+{% extends '::base1.html.twig' %}
+{% block title %}Acerca{% endblock %}
+{% block contenido %}
+	<section id="contenido">
+		<article id="descripcion-acerca">
+			<h2>Como nace?</h2>
+			<p>
+				Oasisnet se inició como un producto de alternativa de conexión para  servicio de valor agregado (Internet) en el año 2005,operando en la localidad de Corrientes. Se inicio con un servicio Wifi LAN , con sus primeros  clientes en dicha localidad, a los pocos meses se inicio la reformación del Sistema para brindar más conexiones en lugares más alejados del casco centrico.
+				OASISNET  en el año 2008 pasa a ser OASISNET S.A. por estrategia de crecimiento para llegar a otros mercados y tener una administración independiente ya que se debía incorporar una marca a un producto en competencia como lo es INTERNET.
+			</p>
+			<hr />			
+			<h2>Nuestra Misi&oacute;n</h2>
+			<p>
+				Es ser una empresa en servicios de telecomunicaciones y lograr la convergencia de tecnologías, para ponerla al alcance de la sociedad generando oportunidades de un continuo crecimiento con presencia nacional.
+			</p>
+			<hr />
+			<h2>Nuestra Visi&oacute;n</h2>
+			<p>
+				Ser la mejor oportunidad de negocio independiente, consolidando el liderazgo en la distribución de internet.
+				Se logra con motivación y creatividad, trabajo en equipo y en constante aprendizaje, en un ambiente donde se reconoce y se premian los esfuerzos individuales.
+			</p>
+		</article>
+		<article id="multimedia-acerca">
+			<figure id="img-acerca">
+				<img src={{asset('public/img/acerca1.jpg')}} alt="acerca" />
+				<figcaption>
+					Nuestra empresa provee enlaces de datos digitales,  de alta capacidad y estabilidad, asimetricos y con 100% de disponibilidad en la zona de cobertura. Se brindan tanto a hogares como empresas con importantes necesidades de conectividad IP banda ancha
+					<p>
+					Valores
+					Confianza.
+					- Respeto por las Personas.
+					- Innovación.
+					- Nos comunicamos abierta y honestamente
+					- Profesionalismo.
+					- Compromiso con la satisfacción del cliente
+					- Ante todo, actuamos con integridad.
+					</p>
+				</figcaption>
+			</figure>
+
+
+
+		</article>		
+	</section>
+{% endblock %}

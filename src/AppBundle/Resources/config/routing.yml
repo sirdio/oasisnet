@@ -1,0 +1,27 @@
+visitante_homepage:
+  path: /inicio
+  defaults: { _controller: AppBundle:Default:inicio}
+
+visitante_acerca:
+  path: /acerca
+  defaults: { _controller: AppBundle:Default:acerca}
+
+visitante_servicios:
+  path: /servicio
+  defaults: { _controller: AppBundle:Default:servicio}
+
+visitante_contacto:
+  path: /contacto
+  defaults: { _controller: AppBundle:Default:contacto}
+
+visitante_socios:
+  path: /socio
+  defaults: { _controller: AppBundle:Default:socio}
+
+visitante_vermapa:
+  path: /vermapa
+  defaults: { _controller: AppBundle:Default:vermapa}
+
+##usuarios_homepage:
+##    path:     /
+##    defaults: { _controller: UsuariosBundle:Default:index }
